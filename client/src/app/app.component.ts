@@ -1,5 +1,5 @@
 import { RouterOutlet } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { TitleService } from './services/title/title.service';
 
 @Component({
@@ -7,6 +7,7 @@ import { TitleService } from './services/title/title.service';
   standalone: true,
   imports: [RouterOutlet],
   template: `<main class="site-main"><router-outlet/></main>`,
+  changeDetection: ChangeDetectionStrategy.Eager,
   styles: `
     .site-main
       display: flex;

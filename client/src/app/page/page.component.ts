@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { TitleService } from '../services/title/title.service';
 import { environment } from '../../env/dev';
@@ -18,6 +18,7 @@ import { environment } from '../../env/dev';
       </main>Tests
     </article>
   `,
+  changeDetection: ChangeDetectionStrategy.Eager,
   styles: `
     :host
       display: flex;
