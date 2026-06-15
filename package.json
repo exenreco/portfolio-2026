@@ -1,0 +1,12 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Exenreco Bell's Porfolio 2026",
+  "license": "MIT",
+  "author": "Exenreco Bell",
+  "type": "module",
+  "main": "-",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
